@@ -1,5 +1,6 @@
 body {
-  background-color: #003333;
+  background-color: #fff
+  ;
   font-family: 'Source Serif Pro', serif;
   color: #E6EAE5;
   margin: 0;
@@ -13,7 +14,7 @@ body {
 .container {
   max-width: 600px;
   padding: 40px;
-  background-color: #003333;
+  background-color: #05323A;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
@@ -41,9 +42,9 @@ input, textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #5C7260;
+  border: 1px solid #fff;
   border-radius: 4px;
-  background-color: #1B1F23;
+  background-color:#04282f;
   color: #E6EAE5;
 }
 
