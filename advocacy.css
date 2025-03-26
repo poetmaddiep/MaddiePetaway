@@ -1,3 +1,87 @@
+/* ==== NAVIGATION ==== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #263459;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    color: white; /* Ensure the logo text is white */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: #8e82fe; /* Change color on hover */
+}
+
+/* Mobile Navigation */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hide nav links by default on mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none; /* Hide by default */
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: white;
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .nav-links a {
+        color: black;
+        padding: 10px;
+    }
+    .nav-links.active {
+        display: block; /* Show when active */
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
 body {
   margin: 0;
   font-family: 'Source Serif Pro', serif;
