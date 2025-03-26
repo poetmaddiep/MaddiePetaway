@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: 'Source Serif Pro', serif;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;
+  background-size: cover;
+  color: #E6EAE5;
+}
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: rgba(27, 31, 35, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #B8BDB5;
+}
+
+.about-section {
+  background-color: rgba(51, 78, 70, 0.85);
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.about-section h2 {
+  font-family: 'Libre Baskerville', serif;
+  color: #E6EAE5;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.about-section p {
+  font-size: 1.1em;
+  color: #B8BDB5;
+  line-height: 1.6em;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #8B3A3A;
+  font-style: normal;
+}
+
+em {
+  font-style: italic;
+  color: #E6EAE5;
+}
