@@ -3,83 +3,88 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: #263459;
+    padding: 15px 25px;
+    background-color: rgba(27, 31, 35, 0.9); /* matches body overlay background */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    backdrop-filter: blur(4px); /* adds a frosted glass effect */
+    border-bottom: 1px solid #5C7260; /* subtle green-gray divider */
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Cormorant Garamond', serif;
-    color: white; /* Ensure the logo text is white */
+    font-family: 'Libre Baskerville', serif;
+    color: #E6EAE5;
+    letter-spacing: 1px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Source Serif Pro', serif;
+    gap: 15px;
 }
 
 .nav-links li {
-    margin: 0 10px;
+    margin: 0;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: #E6EAE5;
     font-size: 16px;
     transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
-/* Hover Effect */
 .nav-links a:hover {
-    color: #8e82fe; /* Change color on hover */
+    background-color: #4C6770;
+    color: #E6EAE5;
 }
 
 /* Mobile Navigation */
 .menu-toggle {
     display: none;
-    font-size: 24px;
+    font-size: 26px;
     background: none;
     border: none;
-    color: white;
+    color: #E6EAE5;
     cursor: pointer;
 }
 
-/* Hide nav links by default on mobile */
+/* Mobile Styles */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
     .nav-links {
-        display: none; /* Hide by default */
+        display: none;
         position: absolute;
         top: 60px;
-        right: 10px;
-        background: white;
-        width: 200px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        right: 15px;
+        background: rgba(27, 31, 35, 0.95);
+        width: 220px;
+        flex-direction: column;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
     .nav-links a {
-        color: black;
         padding: 10px;
+        color: #E6EAE5;
+        font-size: 16px;
     }
     .nav-links.active {
-        display: block; /* Show when active */
+        display: flex;
     }
-
     .nav-links li {
-        margin: 15px 0;
-    }
-
-    .menu-toggle {
-        display: block;
+        margin: 10px 0;
     }
 }
 body {
